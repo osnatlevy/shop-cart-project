@@ -1,0 +1,141 @@
+{
+    "items": [{
+            "sys": {
+                "id": "27"
+            },
+            "fields": {
+                "title": "t-5005",
+                "description": "21k/white gold,5.5m wide",
+                "price": 10.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-1.jpg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys": {
+                "id": "28"
+            },
+            "fields": {
+                "title": "t-4009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 12.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-2.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "29"
+            },
+            "fields": {
+                "title": "t-4009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 12.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-3.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "30"
+            },
+            "fields": {
+                "title": "t-5009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 58.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-4.jpg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys": {
+                "id": "31"
+            },
+            "fields": {
+                "title": "t-5009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 58.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-5.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "32"
+            },
+            "fields": {
+                "title": "t-5009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 58.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-1.jpg"
+                        }
+                    }
+                }
+            }
+        }, {
+            "sys": {
+                "id": "33"
+            },
+            "fields": {
+                "title": "t-5009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 58.99,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-1.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "34"
+            },
+            "fields": {
+                "title": "t-9009",
+                "description": "21k/white gold,5.5m wide",
+                "price": 58.00,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/bracelets-2.jpg"
+
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

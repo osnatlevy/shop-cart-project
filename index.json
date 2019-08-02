@@ -1,0 +1,73 @@
+{
+    "items": [{
+            "sys": {
+                "id": "15"
+            },
+            "fields": {
+                "title": "T-ring",
+                "description": "14k/gold,4m wide",
+                "price": 150,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/ring-5.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "16"
+            },
+            "fields": {
+                "title": "G-ring",
+                "description": "21k/white gold,5.5m wide",
+                "price": 230,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/ring-2.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "17"
+            },
+            "fields": {
+                "title": "F1-ring",
+                "description": "21k/white gold,5.5m wide",
+                "price": 450,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/ring-3.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "R-ring",
+                "description": "21k/gold,4m wide",
+                "price": 350,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "../images/ring-4.jpg"
+
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
