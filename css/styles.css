@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap');
 
 :root {
 	--primaryColor: #f7f3f4;
@@ -18,7 +18,8 @@
 body {
 	color: var(--mainBlack);
 	background: var(--mainWhite);
-	font-family: "Lato", sans-serif;
+	font-family: 'Libre Caslon Text',
+		serif;
 }
 
 /* --------------- Navbar ---------------- */
@@ -94,7 +95,7 @@ a:hover {
 	display: flex;
 }
 
-/* --------------- header ---------------- */
+/* --------------- header -section--------------- */
 .header {
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 	color: var(--mainWhite);
@@ -153,9 +154,9 @@ a:hover {
 	opacity: 0.6;
 }
 
+/* ---------------end of header section ---------------- */
 
 
-/* --------------- Products ---------------- */
 /*------featured-categories------*/
 .featured-categories {
 	margin: 50px 0;
@@ -219,6 +220,8 @@ a:hover {
 	height: initial;
 }
 
+/* --------------- end of section-1---------------- */
+/* --------------- products---------------- */
 .products {
 	padding: 4rem 0;
 }
