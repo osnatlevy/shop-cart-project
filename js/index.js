@@ -8,11 +8,13 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
+//cart
 let cart = [];
+//buttons
 let buttonsDOM = [];
 //syntactical sugar of writing constructor function
 
-// products
+//getting the products
 class Products {
     async getProducts() {
         // always returns promise so we can add .then
@@ -92,16 +94,20 @@ class UI {
                 // disable button
                 event.target.innerText = "In Cart";
                 event.target.disabled = true;
-                // add to cart
+                //get product from products
                 let cartItem = {
                     ...Storage.getProduct(id),
                     amount: 1
                 };
+                //add product to the cart
                 cart = [...cart, cartItem];
+                //save cart in local storage
                 Storage.saveCart(cart);
-                // add to DOM
+                //  set cart values add to DOM
                 this.setCartValues(cart);
+                //display cart item
                 this.addCartItem(cartItem);
+                //show  the cart
                 this.showCart();
             });
         });
@@ -160,9 +166,11 @@ class UI {
         cartDOM.classList.remove("showCart");
     }
     cartLogic() {
+        //clear cart button
         clearCartBtn.addEventListener("click", () => {
             this.clearCart();
         });
+        //cart functionality
         cartContent.addEventListener("click", event => {
             if (event.target.classList.contains("remove-item")) {
                 let removeItem = event.target;
@@ -193,6 +201,7 @@ class UI {
                 }
             }
         });
+
     }
     clearCart() {
         // console.log(this);
@@ -236,6 +245,7 @@ class Storage {
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
     const products = new Products();
+    //setup app
     ui.setupAPP();
 
     // get all products

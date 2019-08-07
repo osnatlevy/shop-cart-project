@@ -8,11 +8,12 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");
+// enter information and get information from local-storge
 let cart = [];
 let buttonsDOM = [];
 //syntactical sugar of writing constructor function
 
-// products
+// products  getting the products from json
 class Products {
     async getProducts() {
         // always returns promise so we can add .then
@@ -49,7 +50,7 @@ class Products {
     }
 }
 
-// ui
+// Responsible for all products that come from .products and displays them
 class UI {
     displayProducts(products) {
         let result = "";
@@ -215,7 +216,7 @@ class UI {
         return buttonsDOM.find(button => button.dataset.id === id);
     }
 }
-
+//local storage
 class Storage {
     static saveProducts(products) {
         localStorage.setItem("products", JSON.stringify(products));
@@ -232,7 +233,7 @@ class Storage {
             JSON.parse(localStorage.getItem("cart")) : [];
     }
 }
-
+//Where we kick things off
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI();
     const products = new Products();
