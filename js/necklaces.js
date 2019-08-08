@@ -1,3 +1,10 @@
+const client = contentful.createClient({
+    // This is the space ID. A space is like a project folder in Contentful terms
+    space: "rdks9y9qjy1h",
+    // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+    accessToken: "Ws0x_v8ybcabI7byNGnwQ9kugfvtdngNzDo1oidlIPU"
+});
+
 // variables
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
@@ -18,14 +25,18 @@ class Products {
         // always returns promise so we can add .then
         // we can use await until promised is settled and return result
         try {
-            let result = await fetch("../necklaces.json");
-            let data = await result.json();
+            // let result = await fetch("products.json");
+            // let data = await result.json();
+            let contentful = await client.getEntries({
+                content_type: "necklaces"
+            });
+            console.log(contentful.items);
 
-
-            let products = data.items;
+            let products = contentful.items;
             products = products.map(item => {
                 const {
                     title,
+                    description,
                     price
                 } = item.fields;
                 const {
@@ -34,6 +45,7 @@ class Products {
                 const image = item.fields.image.fields.file.url;
                 return {
                     title,
+                    description,
                     price,
                     id,
                     image
@@ -67,6 +79,7 @@ class UI {
             </button>
           </div>
           <h3>${product.title}</h3>
+          <h6>${product.description}</h6>
           <h4>$${product.price}</h4>
         </article>
         <!-- end of single product -->
